@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISBN Validator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>ISBN Validator</h1>
+      <p class="description">Enter an ISBN-10 or ISBN-13 number to validate</p>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="isbn-input"
+          placeholder="e.g., 978-0-306-40615-7"
+        />
+        <button id="validate-btn">Validate</button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+      <div class="examples">
+        <h3>Examples:</h3>
+        <ul>
+          <li><strong>ISBN-10:</strong> 0-306-40615-2 or 0306406152</li>
+          <li><strong>ISBN-13:</strong> 978-0-306-40615-7 or 9780306406157</li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

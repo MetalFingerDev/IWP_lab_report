@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: #4ecdc4;
+}
+
+.description {
+  color: #aaa;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #4ecdc4;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+input:focus {
+  border-color: #81d4fa;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background: #4ecdc4;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1a1a2e;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #3dbdb5;
+  transform: scale(1.05);
+}
+
+.result {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result.valid {
+  background: rgba(76, 175, 80, 0.2);
+  border: 2px solid #4caf50;
+}
+
+.result.invalid {
+  background: rgba(244, 67, 54, 0.2);
+  border: 2px solid #f44336;
+}
+
+.result .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.result .message {
+  font-weight: bold;
+}
+
+.result .type {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.examples {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.examples h3 {
+  margin-bottom: 0.5rem;
+  color: #4ecdc4;
+}
+
+.examples ul {
+  list-style: none;
+}
+
+.examples li {
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
