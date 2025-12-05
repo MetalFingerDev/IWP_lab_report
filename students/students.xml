@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student_details xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="student_schema.xsd">
+
+    <student registration_number="REG123">
+        <name>
+            <first_name>Rahul</first_name>
+            <last_name>Sharma</last_name>
+        </name>
+        <department>Computer Science</department>
+        <address>Bhopal, Madhya Pradesh</address>
+        <phone>123-4567</phone>
+    </student>
+
+    <student registration_number="REG124">
+        <name>
+            <first_name>Anita</first_name>
+            <last_name>Verma</last_name>
+        </name>
+        <department>Information Technology</department>
+        <address>Indore, Madhya Pradesh</address>
+        <phone>987-6543</phone>
+    </student>
+
+</student_details>

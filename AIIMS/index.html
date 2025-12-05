@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIIMS Hospital Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>AIIMS Hospital Registration</h1>
+      <p class="hint">
+        Please fill in the patient details below. Fields marked with * are
+        required.
+      </p>
+
+      <form
+        id="registrationForm"
+        onsubmit="event.preventDefault();displayLatestData();"
+        aria-label="AIIMS hospital registration form"
+        novalidate
+      >
+        <div>
+          <label for="fullName">Full Name *</label>
+          <input
+            id="fullName"
+            name="fullName"
+            type="text"
+            placeholder="Patient full name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email *</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="phone">Phone *</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="e.g., +91 12345 67890"
+            required
+          />
+        </div>
+        <div>
+          <label for="dob">Date of Birth *</label>
+          <input id="dob" name="dob" type="date" required />
+        </div>
+        <div>
+          <label for="gender">Gender *</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="city">City *</label>
+          <input
+            id="city"
+            name="city"
+            type="text"
+            placeholder="City"
+            required
+          />
+        </div>
+        <div class="full">
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Street, building, landmark (optional)"
+          ></textarea>
+        </div>
+        <div>
+          <label for="emergencyName">Emergency Contact Name *</label>
+          <input
+            id="emergencyName"
+            name="emergencyName"
+            type="text"
+            placeholder="Contact full name"
+            required
+          />
+        </div>
+        <div>
+          <label for="emergencyPhone">Emergency Contact Phone *</label>
+          <input
+            id="emergencyPhone"
+            name="emergencyPhone"
+            type="tel"
+            placeholder="Emergency phone"
+            required
+          />
+        </div>
+        <div>
+          <label for="insurance">Insurance Number</label>
+          <input
+            id="insurance"
+            name="insurance"
+            type="text"
+            placeholder="Policy/Insurance ID (optional)"
+          />
+        </div>
+        <div class="full">
+          <label for="allergies">Known Allergies (if any)</label>
+          <textarea
+            id="allergies"
+            name="allergies"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+        <div class="full">
+          <label for="conditions">Existing Medical Conditions</label>
+          <textarea
+            id="conditions"
+            name="conditions"
+            placeholder="Type here..."
+          ></textarea>
+        </div>
+        <div class="actions full">
+          <button type="submit">Register Patient</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+
+      <h3>Latest Submitted Data</h3>
+      <p id="display-data" aria-live="polite">No submissions yet.</p>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

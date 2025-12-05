@@ -1,0 +1,106 @@
+/* AIIMS Hospital Registration Form styles */
+:root {
+  --bg: #f6f7fb;
+  --card: #fff;
+  --accent: #0073e6;
+  --danger: #e63946;
+  --muted: #6b7280;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 24px;
+}
+main {
+  max-width: 760px;
+  margin: 28px auto;
+  background: var(--card);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(12, 17, 38, 0.06);
+}
+h1 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+input.error,
+textarea.error,
+select.error {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.06);
+}
+input[type="date"] {
+  padding: 8px 10px;
+}
+textarea {
+  min-height: 72px;
+}
+.full {
+  grid-column: 1 / -1;
+}
+.actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 6px;
+}
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+}
+small.error {
+  color: var(--danger);
+  font-weight: 600;
+}
+small.hint {
+  color: var(--muted);
+}
+.hint {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+#display-data {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px dashed #e6edf7;
+}
+@media (max-width: 720px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
